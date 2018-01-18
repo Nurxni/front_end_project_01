@@ -10,14 +10,37 @@
 				margin: 0;
 			}
 			header{
-				display: flex;
-				justify-content: space-around;
-				text-align: center;
-				align-content: center;
-				align-items: center;
 				margin-bottom: 20px;
 				background: #EEE;
 				padding: 10px;
+			}
+
+			.navigation{
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+				align-content: center;
+				align-items: center;
+			}
+
+			.navigation__list{
+				list-style-type: none;
+			}
+
+			.navigation__list li{
+				display: inline-block;
+				padding: 0 15px;
+			}
+
+			.navigation__list a{
+				color: #3A4FA3;
+				text-decoration: none;
+				transition: 1s all ease;
+			}
+
+			.navigation__list a:hover{
+				letter-spacing: 1.1px;
+				color: #FF0000;
 			}
 
 			a{
@@ -52,36 +75,288 @@
 	<body>
 		
 		<header>
-			<a>HOME</a>
-			<a>About</a>
-			<a>Projects</a>
-			<a>Photos</a>
+			<nav class="navigation">
+				<!-- left side of nav -->
+				<div class="navigation__left">
+					<img src="https://app.evrybo.com/public/assets/logo-l@2x.png"/>
+				</div>
+
+				<!-- right side of nav -->
+				<div class="navigation__right">
+					<!-- an unordered list right here -->
+					<ul class="navigation__list">
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Projects</a>
+						</li>
+						<li>
+							<a href="#">Photos</a>
+						</li>
+						
+					</ul>
+				</div>
+
+			</nav>
 		</header>
 		
 		<main>
-			<h1>Page Title</h1>
-			<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<section>
+				<h1>Page Title</h1>
+				<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
 
-			<h1>Second Heading</h1>
-			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<section>
+				<h1>Second Heading</h1>
+				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
 
-			<h1>Third Heading</h1>
-			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<section>
+				<h1>Third Heading</h1>
+				<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+
+			<!-- section for list items -->
+			<section>
+				<!-- list items -->
+				<ul >
+					<li>
+						Food
+						<ul>
+							<li>Rice</li>
+							<li>Spaghetti</li>
+							<li>Amala</li>
+						</ul>
+
+					</li>
+					<li>
+						Music
+						<ul>
+							<li>Hip-Hop</li>
+							<li>RnB</li>
+							<li>Blues</li>
+						</ul>
+					</li>
+					<li>
+						Sports
+						<ul>
+							<li>Football</li>
+							<li>Basketball</li>
+							<li>Tennis</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ol>
+					<li>
+						Hobby
+						<ol type="i">
+							<li>Reading</li>
+							<li>Football</li>
+							<li>Travel</li>
+						</ol>
+					</li>
+					<li>
+					Places
+					<ol type="i">
+						<li>Kogi</li>
+						<li>Abuja</li>
+						<li>Gernmany</li>
+					</ol>
+					</li>
+					<li>
+						Careers
+						<ol type="i">
+							<li>IT</li>
+							<li>Accounting</li>
+							<li>Photography</li>
+						</ol>
+					</li>
+				</ol>
+
+				<ol>
+					<li>
+						Lagos
+						<ol>
+							<li type="a">
+								Ikeja
+								<ul>
+									<li>Opebi</li>
+									<li>GRA</li>
+									<li>Allen Avenue</li>
+								</ul>
+							</li>
+							<li type="a">
+								Lekki
+								<ul>
+									<li>Admiralty</li>
+									<li>Jakande</li>
+									<li>Maple</li>
+								</ul>
+							</li>
+							<li type="a">
+								Alimosho
+								<ul>
+									<li>Egbeda</li>
+									<li>Ipaja</li>
+									<li>Gowon</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>
+					Names
+					<ol>
+						<li type="a">
+							Yoruba
+							<ul>
+								<li>Yinka</li>
+								<li>Gbenga</li>
+								<li>Kemi</li>
+							</ul>
+						</li>
+						<li type="a">
+							Igbo
+							<ul>
+								<li>Chike</li>
+								<li>Nkem</li>
+								<li>Obiageli</li>
+							</ul>
+						</li>
+						<li type="a">
+							Hausa
+							<ul>
+								<li>Nasiru</li>
+								<li>Mustapha</li>
+								<li>Zainab</li>
+							</ul>
+						</li>
+					</ol>
+
+					</li>
+					<li>
+						London
+						<ol>
+							<li type="a">
+								North
+								<ul>
+									<li>Edmonton</li>
+									<li>Seven Sisters</li>
+									<li>Highbury</li>
+
+								</ul>
+							</li>
+							<li type="a">
+							West
+							<ul>
+								<li>Kings Cross</li>
+								<li>West Ham</li>
+								<li>Stratford</li>
+							</ul>
+							</li>
+							<li type="a">
+							South
+							<ul>
+								<li>Brixton</li>
+								<li>Peckham</li>
+								<li>Croydon</li>
+							</ul>
+							</li>
+						</ol>
+					</li>
+					<li>
+					Animals
+					<ol>
+						<li type="a">
+							Carnivores
+							<ul>
+								<li>Lions</li>
+								<li>Leopards</li>
+								<li>Tigers</li>
+							</ul>
+						</li>
+						<li type="a">
+						Herbivores
+						<ul>
+							<li>Elephants</li>
+							<li>Hippos</li>
+							<li>Deer</li>
+						</ul>
+						</li>
+						<li type="a">
+						Aquatic
+						<ul>
+							<li>Fishes</li>
+							<li>Octopus</li>
+							<li>Seal</li>
+						</ul>
+						</li>
+					</ol>
+					</li>
+					<li>
+					Currencies
+					<ol>
+						<li type="a">
+							Naira
+							<ul>
+								<li>Ten</li>
+								<li>Hundred</li>
+								<li>One Thousand</li>
+							</ul>
+						</li>
+						<li type="a">
+						Dollars
+						<ul>
+							<li>One</li>
+							<li>Five</li>
+							<li>One Hundred</li>
+						</ul>
+						</li>
+						<li type="a">
+						Crypto
+						<ul>
+							<li>Bitcoin</li>
+							<li>Ethereum</li>
+							<li>Ripple</li>
+						</ul>
+						</li>
+					</ol>
+					</li>
+				</ol>
+
+				<!--  -->
+				<dl>
+					<dt>River</dt>
+					<dd>A river is a body of water</dd>
+					<dt>Computer</dt>
+					<dd>An electronic device </dd>
+				</dl>
+			</section>
+
+			<!-- section for inputs -->
+			<section>
+				<input type="submit" value="click me" placeholder="type in your password">
+
+			</section>
 
 		</main>
 
